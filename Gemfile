@@ -40,6 +40,8 @@ group :development do
   gem 'spring'
   # Linter
   gem 'rubocop'
+  # Visualize db by running 'Hirb.enable' in rails console
+  gem 'hirb'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
