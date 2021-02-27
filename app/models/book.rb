@@ -13,6 +13,7 @@ class Book < ApplicationRecord
   validates :completed_chapters,
             numericality: {
               only_integer: true,
+              greater_than_or_equal_to: 0,
               less_than: 1000
             }
 end
