@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Books", type: :request do
   before(:example) do
     @user = User.create(username: 'test_user', password: '123456')
-    token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base)
+    token = JWT.encode({user_id: @user.id}, Rails.application.secret_key_base)
     @headers = { Authorization: "Bearer #{token}"}
   end
 
