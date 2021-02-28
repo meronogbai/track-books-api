@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   scope :api do
     scope :v1 do
-      post 'signup', to: 'users#create'
-      post 'login', to: 'users#login'
+      resources :users, only: [:create]
+      resources :sessions, only: [:create]
     end
   end
 end
