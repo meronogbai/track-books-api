@@ -10,7 +10,7 @@ class BooksController < ApplicationController
     book = current_user.books.build(book_params)
     if book.valid?
       book.save
-      render json: { book: book }
+      render json: { book: book }, status: :created
     else
       render json: { error: book.errors.full_messages }, status: :not_acceptable
     end
