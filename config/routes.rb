@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     scope :v1 do
       resources :users, only: [:create]
       resources :sessions, only: [:create]
-      resources :books, only: [:index, :create, :show]
+      resources :books, only: [:index, :create, :show, :update]
     end
   end
 end
