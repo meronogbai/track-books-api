@@ -20,10 +20,10 @@ class ApplicationController < ActionController::API
   end
 
   def current_user
-    if decoded_token
-      user_id = decoded_token[0]['user_id']
-      User.find_by(id: user_id)
-    end
+    return unless decoded_token
+
+    user_id = decoded_token[0]['user_id']
+    User.find_by(id: user_id)
   end
 
   def authenticate

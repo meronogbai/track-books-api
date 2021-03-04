@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  
   it 'validates user if length of username is >= 2' do
     user = User.new(username: 'test_user', password: '123456')
     expect(user.valid?).to be true
@@ -18,7 +17,7 @@ RSpec.describe User, type: :model do
   end
 
   it "doesn't validate user if length of name is > 20" do
-    user = User.new(username: 't'*21, password: '123456')
+    user = User.new(username: 't' * 21, password: '123456')
     expect(user.valid?).to be false
   end
 
@@ -42,5 +41,4 @@ RSpec.describe User, type: :model do
     user = User.new(username: 'test_user', password: '123456')
     expect(user.valid?).to be false
   end
-
 end

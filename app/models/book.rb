@@ -14,6 +14,6 @@ class Book < ApplicationRecord
             numericality: {
               only_integer: true,
               greater_than_or_equal_to: 0,
-              less_than_or_equal_to: Proc.new { |book| book.total_chapters }
+              less_than_or_equal_to: proc { |book| book.total_chapters }
             }
 end

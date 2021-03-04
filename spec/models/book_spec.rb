@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Book, type: :model do
-  
   before(:example) do
     @user = User.create!(username: 'test_user', password: '123456')
   end
