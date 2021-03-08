@@ -1,7 +1,7 @@
 class Book < ApplicationRecord
-  belongs_to :user
+  has_one :tracker
+  has_one :user, through: :tracker
 
-  validates :user, presence: true
   validates :title, presence: true,
                     length: { minimum: 2, maximum: 50 }
   validates :total_chapters, presence: true,
