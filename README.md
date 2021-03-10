@@ -1,24 +1,80 @@
-# README
+# Track Books API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Track books is a full-stack application that lets users track the books they're reading. This repo hosts the code for the backend of the application. To view the code for the backend, go to [Track Books (frontend)](https://github.com/meronokbay/track-books/).
 
-Things you may want to cover:
 
-* Ruby version
+- A user can signup and login.
+- Logged in user can add books with title, total chapters and completed chapters as parameters.
+- Logged in user can track books and increase the completed chapters.
+- Logged in user can view the progress of each book in a circular progress bar.
 
-* System dependencies
+### ERD
 
-* Configuration
+![ERD](./docs/ERD.png)
 
-* Database creation
+## Built With
 
-* Database initialization
+- Rails
+- RSpec
+- PostgreSQL
+- Insomnia (to generate the docs)
 
-* How to run the test suite
+## API Endpoint
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+https://track-books.herokuapp.com/api/v1
+```
 
-* Deployment instructions
+## Documentation
 
-* ...
+[Documentation](https://meronokbay.github.io/track-books-api/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- Ruby 3.0.0
+- Rails 6.1.3
+- PostgreSQL
+
+### Setup
+
+Clone the repo
+
+```
+git clone https://github.com/meronokbay/track-books-api/
+```
+
+### Install
+
+`cd` into the cloned repo and execute `bundle install`.
+
+### Usage
+
+Execute `rails s` to spin up a local server.
+
+### Run tests
+
+Execute `bundle exec rspec` to run the unit and request tests.
+
+## Author
+
+👤 **Meron Ogbai**
+
+- Github: [@meronokbay](https://github.com/meronokbay)
+- Twitter: [@MeronDev](https://twitter.com/MeronDev)
+- Linkedin: [Meron Ogbai](https://linkedin.com/in/meron-ogbai/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
