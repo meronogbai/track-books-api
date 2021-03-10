@@ -27,9 +27,7 @@ https://track-books.herokuapp.com/api/v1
 
 ## Documentation
 
-```
-https://meronokbay.github.io/track-books-api/
-```
+[Documentation](https://meronokbay.github.io/track-books-api/)
 
 ## Getting Started
 
