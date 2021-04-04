@@ -32,7 +32,7 @@ class BooksController < ApplicationController
 
   def destroy
     @book.destroy
-    render json: { success: 'Book was deleted successfully.'}, status: :ok
+    render json: { success: 'Book was deleted successfully.' }, status: :ok
   end
 
   private

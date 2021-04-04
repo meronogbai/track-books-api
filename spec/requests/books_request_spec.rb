@@ -26,7 +26,7 @@ RSpec.describe 'Books', type: :request do
   end
 
   it "updates a book's completed chapters" do
-    patch "/api/v1/books/#{@book.id}", params: {completed_chapters: 11}, headers: @headers
+    patch "/api/v1/books/#{@book.id}", params: { completed_chapters: 11 }, headers: @headers
     expect(response).to have_http_status(:ok)
   end
 
