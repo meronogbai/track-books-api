@@ -13,7 +13,7 @@ class BooksController < ApplicationController
       book.save
       render json: { book: book }, status: :created
     else
-      render json: { error: book.errors.full_messages }, status: :not_acceptable
+      render json: { failure: book.errors.full_messages }, status: :not_acceptable
     end
   end
 
