@@ -7,7 +7,7 @@ class UsersController < ApplicationController
       token = encode_token(payload)
       render json: { username: user.username, jwt: token }, status: :created
     else
-      render json: { error: user.errors.full_messages }, status: :not_acceptable
+      render json: { failure: user.errors.full_messages }, status: :not_acceptable
     end
   end
 
